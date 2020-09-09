@@ -56,6 +56,7 @@
 		322E2E532505F5A4005BD5BE /* CustomBlurEffectView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomBlurEffectView.swift; sourceTree = "<group>"; };
 		322E2E572505F8CC005BD5BE /* CustomBlurEffect.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomBlurEffect.swift; sourceTree = "<group>"; };
 		322E2E592505F8EB005BD5BE /* UIVisualEffect+effectSettings.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIVisualEffect+effectSettings.swift"; sourceTree = "<group>"; };
+		32AAA9422508C43B004E3486 /* README.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -80,6 +81,7 @@
 		322E2E212505F2C0005BD5BE = {
 			isa = PBXGroup;
 			children = (
+				32AAA9422508C43B004E3486 /* README.md */,
 				322E2E2C2505F2C0005BD5BE /* Example */,
 				322E2E472505F388005BD5BE /* CustomBlurEffectView */,
 				322E2E2B2505F2C0005BD5BE /* Products */,
@@ -116,7 +118,8 @@
 				322E2E482505F388005BD5BE /* CustomBlurEffectView.h */,
 				322E2E492505F388005BD5BE /* Info.plist */,
 			);
-			path = CustomBlurEffectView;
+			name = CustomBlurEffectView;
+			path = Sources/CustomBlurEffectView;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
