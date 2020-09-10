@@ -7,7 +7,7 @@
 
 import UIKit
 
-public class CustomBlurEffectView: UIView {
+open class CustomBlurEffectView: UIView {
     
     private enum Constants {
         static let blurRadiusKey = "blurRadius"
@@ -18,21 +18,21 @@ public class CustomBlurEffectView: UIView {
     // MARK: - Public
     
     /// Blur radius. Defaults to `10`
-    public var blurRadius: CGFloat = 10.0 {
+    open var blurRadius: CGFloat = 10.0 {
         didSet {
             _setValue(blurRadius, forKey: Constants.blurRadiusKey)
         }
     }
     
     /// Tint color. Defaults to `nil`
-    public var colorTint: UIColor? {
+    open var colorTint: UIColor? {
         didSet {
             _setValue(colorTint, forKey: Constants.colorTintKey)
         }
     }
     
     /// Tint color alpha. Defaults to `0.8`
-    public var colorTintAlpha: CGFloat = 0.8 {
+    open var colorTintAlpha: CGFloat = 0.8 {
         didSet {
             _setValue(colorTintAlpha, forKey: Constants.colorTintAlphaKey)
         }
@@ -60,8 +60,15 @@ public class CustomBlurEffectView: UIView {
         }
     }
     
-    required init?(coder: NSCoder) {
+    required public init?(coder: NSCoder) {
         super.init(coder: coder)
+        backgroundColor = .clear
+        setupViews()
+        defer {
+            blurRadius = 10.0
+            colorTint = nil
+            colorTintAlpha = 0.8
+        }
     }
     
     
